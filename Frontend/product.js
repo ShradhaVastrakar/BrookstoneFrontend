@@ -5,7 +5,7 @@ let email_localStorage =localStorage.email;
 let fetchedData = [];
 
 window.addEventListener("load" , () =>{
-    fetch("https://calm-erin-caterpillar-shoe.cyclic.app/api/")
+    fetch("https://ochre-barracuda-tux.cyclic.app/api/")
     .then(response => response.json())
     .then(actualData => {
       // Do something with the data
@@ -27,7 +27,7 @@ function displayProducts(data){
        image.setAttribute("src",element.image);
 
        let id = document.createElement("h3")
-       id.innerText = element.id;
+       id.innerText = `Product ID - ${element.id}`;
 
        let description = document.createElement("h3");
        description.innerText = element.description;
